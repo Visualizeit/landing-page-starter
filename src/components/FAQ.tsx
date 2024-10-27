@@ -30,7 +30,7 @@ const faqs = [
 
 const FAQ = () => {
 	return (
-		<Stack id="faq" component="section" className="w-full">
+		<Stack id="faq" component="section" className="w-full py-16" align="center">
 			<Title ta="center">Frequently asked questions</Title>
 			<Text ta="center">
 				If you have additional questions, please feel free to{' '}
