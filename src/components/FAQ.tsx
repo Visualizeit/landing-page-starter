@@ -1,4 +1,5 @@
-import { Accordion, Container, Stack, Title, Text } from '@mantine/core'
+import { Accordion, Container, Stack, Title, Text, Anchor } from '@mantine/core'
+import { Link } from '@tanstack/react-router'
 
 const faqs = [
 	{
@@ -32,7 +33,8 @@ const FAQ = () => {
 		<Stack id="faq" component="section" className="w-full">
 			<Title ta="center">Frequently asked questions</Title>
 			<Text ta="center">
-				Here are some common questions about groceries and their answers.
+				If you have additional questions, please feel free to{' '}
+				<Anchor component={Link}>contact us.</Anchor>
 			</Text>
 			<Container size="sm" className="w-full">
 				<Accordion className="w-full" variant="filled">
