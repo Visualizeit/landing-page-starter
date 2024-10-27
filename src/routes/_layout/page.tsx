@@ -1,10 +1,14 @@
-import { Container, Title } from '@mantine/core'
+import { Container, Stack, Title } from '@mantine/core'
 import { createFileRoute } from '@tanstack/react-router'
+import FAQ from '@/components/FAQ'
 
 const HomePage = () => {
 	return (
-		<Container className="flex-1" size="xl">
-			<Title c="primary">Welcome Home!</Title>
+		<Container size="xl">
+			<Stack align="center" gap="xl">
+				<Title c="primary">Welcome Home!</Title>
+				<FAQ />
+			</Stack>
 		</Container>
 	)
 }

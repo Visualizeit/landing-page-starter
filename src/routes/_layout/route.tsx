@@ -9,7 +9,7 @@ const AppLayout = () => {
 			<AppShell.Header className="bg-transparent backdrop-blur-lg">
 				<Header />
 			</AppShell.Header>
-			<AppShell.Main className="flex">
+			<AppShell.Main>
 				<Outlet />
 			</AppShell.Main>
 			<AppShell.Footer>
