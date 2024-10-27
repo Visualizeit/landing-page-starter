@@ -5,27 +5,27 @@ import Section from './Section'
 const faqs = [
 	{
 		emoji: '🍎',
-		value: 'What are the benefits of apples?',
-		description:
-			'Crisp and refreshing fruit. Apples are known for their versatility and nutritional benefits. They come in a variety of flavors and are great for snacking, baking, or adding to salads.',
+		question: 'What are the benefits of apples?',
+		answer:
+			'Apples are a good source of fiber and vitamin C. They also contain antioxidants that help protect your cells from damage.',
 	},
 	{
 		emoji: '🥭',
-		value: 'What is the best way to cut a mango?',
-		description:
-			'Mango is a tropical fruit with a sweet and tangy flavor. To cut a mango, slice off the sides of the fruit, avoiding the large pit in the center. Score the flesh in a crisscross pattern, then scoop out the cubes with a spoon.',
+		question: 'What is the best way to cut a mango?',
+		answer:
+			'The best way to cut a mango is to slice off the sides, score the flesh, and then scoop it out with a spoon.',
 	},
 	{
 		emoji: '🥦',
-		value: 'Why is broccoli good for you?',
-		description:
-			'Nutrient-packed green vegetable. Broccoli is packed with vitamins, minerals, and fiber. It has a distinct flavor and can be enjoyed steamed, roasted, or added to stir-fries.',
+		question: 'Why is broccoli good for you?',
+		answer:
+			'Broccoli is high in fiber, vitamin C, and other nutrients that help support a healthy immune system.',
 	},
 	{
 		emoji: '🍋',
-		value: 'Where do lemons get their sour taste?',
-		description:
-			'Sour and tangy citrus fruit. Lemons are known for their high vitamin C content and are commonly used in cooking, baking, and beverages. They add a bright and refreshing flavor to dishes.',
+		question: 'Where do lemons get their sour taste?',
+		answer:
+			'Lemons get their sour taste from citric acid, which is a natural compound found in many fruits.',
 	},
 ]
 
@@ -34,22 +34,25 @@ const FAQ = () => {
 		<Section id="faq">
 			<Stack align="center">
 				<Title ta="center">Frequently asked questions</Title>
-				<Text ta="center">
-					If you have additional questions, please feel free to{' '}
-					<Anchor component={Link}>contact us.</Anchor>
-				</Text>
 				<Container size="sm" className="w-full">
 					<Accordion className="w-full" variant="filled">
 						{faqs.map((faq) => (
-							<Accordion.Item key={faq.value} value={faq.value}>
+							<Accordion.Item key={faq.question} value={faq.question}>
 								<Accordion.Control icon={faq.emoji}>
-									{faq.value}
+									{faq.question}
 								</Accordion.Control>
-								<Accordion.Panel>{faq.description}</Accordion.Panel>
+								<Accordion.Panel>{faq.answer}</Accordion.Panel>
 							</Accordion.Item>
 						))}
 					</Accordion>
 				</Container>
+				<Text size="sm" c="gray" ta="center">
+					Have additional questions?{' '}
+					<Anchor component={Link} c="gray" underline="always">
+						contact us
+					</Anchor>
+					.
+				</Text>
 			</Stack>
 		</Section>
 	)
