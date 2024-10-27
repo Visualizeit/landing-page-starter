@@ -13,7 +13,7 @@ const CallToAction = () => {
 						Surpass
 					</Anchor>
 				</Title>
-				<Text>
+				<Text ta="center">
 					We provide the tools you need to build your project quickly and
 					efficiently.
 				</Text>
