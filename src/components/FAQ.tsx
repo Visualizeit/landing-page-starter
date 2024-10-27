@@ -32,7 +32,7 @@ const faqs = [
 const FAQ = () => {
 	return (
 		<Section id="faq">
-			<Stack align="center">
+			<Stack align="center" gap="xl">
 				<Title ta="center">Frequently asked questions</Title>
 				<Container size="sm" className="w-full">
 					<Accordion className="w-full" variant="filled">

@@ -6,7 +6,7 @@ import Section from './Section'
 const CallToAction = () => {
 	return (
 		<Section id="cta">
-			<Stack align="center">
+			<Stack align="center" gap="xl">
 				<Title ta="center">
 					Build your project with{' '}
 					<Anchor component={Link} inherit>

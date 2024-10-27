@@ -12,8 +12,15 @@ import Section from './Section'
 const USP = () => {
 	return (
 		<Section id="usp">
-			<Stack align="center">
-				<Title>Why Choose Us</Title>
+			<Stack align="center" gap="xl">
+				<Title>Revolutionize your workflow</Title>
+				<Container size="sm">
+					<Text ta="center" c="gray">
+						We offer innovative solutions to help your business grow rapidly.
+						Explore our core features and discover how we can drive your
+						success.
+					</Text>
+				</Container>
 				<Container size="lg">
 					<SimpleGrid cols={3} spacing="xl">
 						<Stack>
