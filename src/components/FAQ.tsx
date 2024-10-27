@@ -1,28 +1,29 @@
-import { Accordion, Container, Stack, Title, Text, Anchor } from '@mantine/core'
+import { Accordion, Container, Title, Text, Anchor, Stack } from '@mantine/core'
 import { Link } from '@tanstack/react-router'
+import Section from './Section'
 
 const faqs = [
 	{
 		emoji: '🍎',
-		value: 'Apples',
+		value: 'What are the benefits of apples?',
 		description:
 			'Crisp and refreshing fruit. Apples are known for their versatility and nutritional benefits. They come in a variety of flavors and are great for snacking, baking, or adding to salads.',
 	},
 	{
-		emoji: '🍌',
-		value: 'Bananas',
+		emoji: '🥭',
+		value: 'What is the best way to cut a mango?',
 		description:
-			'Naturally sweet and potassium-rich fruit. Bananas are a popular choice for their energy-boosting properties and can be enjoyed as a quick snack, added to smoothies, or used in baking.',
+			'Mango is a tropical fruit with a sweet and tangy flavor. To cut a mango, slice off the sides of the fruit, avoiding the large pit in the center. Score the flesh in a crisscross pattern, then scoop out the cubes with a spoon.',
 	},
 	{
 		emoji: '🥦',
-		value: 'Broccoli',
+		value: 'Why is broccoli good for you?',
 		description:
 			'Nutrient-packed green vegetable. Broccoli is packed with vitamins, minerals, and fiber. It has a distinct flavor and can be enjoyed steamed, roasted, or added to stir-fries.',
 	},
 	{
 		emoji: '🍋',
-		value: 'Lemon',
+		value: 'Where do lemons get their sour taste?',
 		description:
 			'Sour and tangy citrus fruit. Lemons are known for their high vitamin C content and are commonly used in cooking, baking, and beverages. They add a bright and refreshing flavor to dishes.',
 	},
@@ -30,25 +31,27 @@ const faqs = [
 
 const FAQ = () => {
 	return (
-		<Stack id="faq" component="section" className="w-full py-16" align="center">
-			<Title ta="center">Frequently asked questions</Title>
-			<Text ta="center">
-				If you have additional questions, please feel free to{' '}
-				<Anchor component={Link}>contact us.</Anchor>
-			</Text>
-			<Container size="sm" className="w-full">
-				<Accordion className="w-full" variant="filled">
-					{faqs.map((faq) => (
-						<Accordion.Item key={faq.value} value={faq.value}>
-							<Accordion.Control icon={faq.emoji}>
-								{faq.value}
-							</Accordion.Control>
-							<Accordion.Panel>{faq.description}</Accordion.Panel>
-						</Accordion.Item>
-					))}
-				</Accordion>
-			</Container>
-		</Stack>
+		<Section id="faq">
+			<Stack align="center">
+				<Title ta="center">Frequently asked questions</Title>
+				<Text ta="center">
+					If you have additional questions, please feel free to{' '}
+					<Anchor component={Link}>contact us.</Anchor>
+				</Text>
+				<Container size="sm" className="w-full">
+					<Accordion className="w-full" variant="filled">
+						{faqs.map((faq) => (
+							<Accordion.Item key={faq.value} value={faq.value}>
+								<Accordion.Control icon={faq.emoji}>
+									{faq.value}
+								</Accordion.Control>
+								<Accordion.Panel>{faq.description}</Accordion.Panel>
+							</Accordion.Item>
+						))}
+					</Accordion>
+				</Container>
+			</Stack>
+		</Section>
 	)
 }
 
