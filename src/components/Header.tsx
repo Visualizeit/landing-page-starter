@@ -1,8 +1,18 @@
-import { Button, Container, Group, ThemeIcon, Title } from '@mantine/core'
+import {
+	Burger,
+	Button,
+	Container,
+	Group,
+	ThemeIcon,
+	Title,
+} from '@mantine/core'
+import { useDisclosure } from '@mantine/hooks'
 import { IconSparkles } from '@tabler/icons-react'
 import { Link } from '@tanstack/react-router'
 
 const Header = () => {
+	const [opened, { toggle }] = useDisclosure()
+
 	return (
 		<Container className="h-full" size="xl">
 			<Group className="h-full" align="center" justify="space-between">
@@ -14,7 +24,8 @@ const Header = () => {
 						<Title order={3}>Surpass</Title>
 					</Group>
 				</Link>
-				<Group>
+				<Burger hiddenFrom="sm" opened={opened} onClick={toggle} />
+				<Group visibleFrom="sm">
 					<Link to="/">
 						<Button variant="subtle">Log in</Button>
 					</Link>
