@@ -14,8 +14,8 @@ const CallToAction = () => {
 					</Anchor>
 				</Title>
 				<Text>
-					Join the thousands of developers who have already used our platform to
-					build their projects.
+					We provide the tools you need to build your project quickly and
+					efficiently.
 				</Text>
 				<Button leftSection={<IconSparkles />} size="md">
 					Get started in minutes
