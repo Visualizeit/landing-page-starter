@@ -13,7 +13,7 @@ const USP = () => {
 	return (
 		<Section id="usp">
 			<Stack align="center" gap="xl">
-				<Title>Revolutionize your workflow</Title>
+				<Title ta="center">Revolutionize your workflow</Title>
 				<Container size="sm">
 					<Text ta="center" c="gray">
 						We offer innovative solutions to help your business grow rapidly.
@@ -22,7 +22,7 @@ const USP = () => {
 					</Text>
 				</Container>
 				<Container size="lg">
-					<SimpleGrid cols={3} spacing="xl">
+					<SimpleGrid cols={{ base: 1, sm: 2, md: 3 }} spacing="xl">
 						<Stack>
 							<ThemeIcon variant="light" radius="xl" size="xl">
 								<IconBolt />
