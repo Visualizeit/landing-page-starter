@@ -30,22 +30,25 @@ const features = [
 const Features = () => {
 	return (
 		<Section id="features">
-			<SimpleGrid cols={{ base: 1, sm: 2 }} spacing="xl">
-				{features.map((feature) => (
-					<Card key={feature.title} radius="lg" padding="lg">
-						<Stack>
-							<Title order={3}>{feature.title}</Title>
-							<Text>{feature.description}</Text>
-							<Image
-								className="aspect-[4/3]"
-								radius="lg"
-								src={feature.image}
-								alt={feature.title}
-							/>
-						</Stack>
-					</Card>
-				))}
-			</SimpleGrid>
+			<Stack gap="xl">
+				<Title ta="center">Where magic meets simplicity</Title>
+				<SimpleGrid cols={{ base: 1, sm: 2 }} spacing="xl">
+					{features.map((feature) => (
+						<Card key={feature.title} radius="lg" padding="lg">
+							<Stack>
+								<Title order={3}>{feature.title}</Title>
+								<Text>{feature.description}</Text>
+								<Image
+									className="aspect-[4/3]"
+									radius="lg"
+									src={feature.image}
+									alt={feature.title}
+								/>
+							</Stack>
+						</Card>
+					))}
+				</SimpleGrid>
+			</Stack>
 		</Section>
 	)
 }
