@@ -13,4 +13,9 @@ export default defineConfig({
 	server: {
 		open: true,
 	},
+	resolve: {
+		alias: {
+			'@tabler/icons-react': '@tabler/icons-react/dist/esm/icons/index.mjs',
+		},
+	},
 })

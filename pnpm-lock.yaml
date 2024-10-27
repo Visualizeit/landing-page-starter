@@ -8,6 +8,12 @@ importers:
 
   .:
     dependencies:
+      '@fontsource-variable/inter':
+        specifier: ^5.1.0
+        version: 5.1.0
+      '@fontsource-variable/noto-sans-sc':
+        specifier: ^5.1.0
+        version: 5.1.0
       '@mantine/core':
         specifier: ^7.13.3
         version: 7.13.3(@mantine/hooks@7.13.3(react@18.3.1))(@types/react@18.3.11)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -546,6 +552,12 @@ packages:
 
   '@floating-ui/utils@0.2.8':
     resolution: {integrity: sha512-kym7SodPp8/wloecOpcmSnWJsK7M0E5Wg8UcFA+uO4B9s5d0ywXOEro/8HM9x0rW+TljRzul/14UYz3TleT3ig==}
+
+  '@fontsource-variable/inter@5.1.0':
+    resolution: {integrity: sha512-Wj2dUGP0vUpxRGQTXQTCNJO+aLcFcQm+gUPXfj/aS877bQkEPBPv9JvZJpwdm2vzelt8NTZ+ausKlBCJjh2XIg==}
+
+  '@fontsource-variable/noto-sans-sc@5.1.0':
+    resolution: {integrity: sha512-PnnGFWTVyoSdiZU/QvH3w8NroJkBazLWEzrrfqdGX/S6txq6iDoNMG+bolTsAQ4dXbdvfKBTyX6kw/xg5bmdcg==}
 
   '@humanfs/core@0.19.0':
     resolution: {integrity: sha512-2cbWIHbZVEweE853g8jymffCA+NCMiuqeECeBBLm8dg2oFdjuGJhgN4UAbI+6v0CKbbhvtXA4qV8YR5Ji86nmw==}
@@ -2988,6 +3000,10 @@ snapshots:
       tabbable: 6.2.0
 
   '@floating-ui/utils@0.2.8': {}
+
+  '@fontsource-variable/inter@5.1.0': {}
+
+  '@fontsource-variable/noto-sans-sc@5.1.0': {}
 
   '@humanfs/core@0.19.0': {}
 

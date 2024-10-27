@@ -4,6 +4,8 @@ import { type PropsWithChildren } from 'react'
 import mantineTheme from './configs/mantineTheme'
 import queryClient from './configs/queryClient'
 
+import '@fontsource-variable/inter'
+import '@fontsource-variable/noto-sans-sc'
 import '@mantine/core/styles.css'
 
 const Providers = ({ children }: PropsWithChildren) => {
