@@ -22,7 +22,8 @@ const features = [
 	},
 	{
 		title: 'Secure File Sharing',
-		description: `Share files with confidence using our enterprise-grade security. Control access, set permissions, and track file history effortlessly.`,
+		description:
+			'Share files with confidence using our enterprise-grade security. Control access, set permissions, and track file history effortlessly.',
 		image: placeholderImage,
 	},
 ]
