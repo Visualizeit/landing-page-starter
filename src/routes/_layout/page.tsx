@@ -2,6 +2,7 @@ import { Stack, Title } from '@mantine/core'
 import { createFileRoute } from '@tanstack/react-router'
 import CallToAction from '@/components/CallToAction'
 import FAQ from '@/components/FAQ'
+import Footer from '@/components/Footer'
 
 const HomePage = () => {
 	return (
@@ -9,6 +10,7 @@ const HomePage = () => {
 			<Title c="primary">Welcome Home!</Title>
 			<CallToAction />
 			<FAQ />
+			<Footer />
 		</Stack>
 	)
 }

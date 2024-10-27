@@ -1,6 +1,5 @@
 import { AppShell } from '@mantine/core'
 import { createFileRoute, Outlet } from '@tanstack/react-router'
-import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 
 const AppLayout = () => {
@@ -12,9 +11,6 @@ const AppLayout = () => {
 			<AppShell.Main>
 				<Outlet />
 			</AppShell.Main>
-			<AppShell.Footer>
-				<Footer />
-			</AppShell.Footer>
 		</AppShell>
 	)
 }
