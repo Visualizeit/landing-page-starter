@@ -3,6 +3,7 @@ import {
 	type MantineColorsTuple,
 	createTheme,
 	DEFAULT_THEME,
+	SegmentedControl,
 } from '@mantine/core'
 
 type ExtendedCustomColors = 'primary' | DefaultMantineColor
@@ -18,6 +19,21 @@ const mantineTheme = createTheme({
 	defaultRadius: 'md',
 	activeClassName: 'active:brightness-90',
 	fontFamily: `'Inter Variable', 'Noto Sans SC Variable', ${DEFAULT_THEME.fontFamily}`,
+	components: {
+		SegmentedControl: SegmentedControl.extend({
+			vars: (theme) => ({
+				root: {
+					'--sc-padding': theme.spacing.md,
+					'--sc-shadow': 'none',
+				},
+			}),
+			classNames: {
+				root: 'bg-transparent',
+				control: 'before:hidden',
+				label: 'text-start',
+			},
+		}),
+	},
 	colors: {
 		primary: [
 			'#e5f4ff',

@@ -4,12 +4,14 @@ import CallToAction from '@/components/CallToAction'
 import FAQ from '@/components/FAQ'
 import Features from '@/components/Features'
 import Footer from '@/components/Footer'
+import UseCases from '@/components/UseCases'
 import USP from '@/components/USP'
 
 const HomePage = () => {
 	return (
 		<Stack align="center" gap={0}>
 			<Title c="primary">Welcome Home!</Title>
+			<UseCases />
 			<Features />
 			<USP />
 			<CallToAction />
