@@ -37,10 +37,10 @@ const Features = () => {
 							<Title order={3}>{feature.title}</Title>
 							<Text>{feature.description}</Text>
 							<Image
+								className="aspect-[4/3]"
 								radius="lg"
 								src={feature.image}
 								alt={feature.title}
-								className="aspect-[4/3]"
 							/>
 						</Stack>
 					</Card>
