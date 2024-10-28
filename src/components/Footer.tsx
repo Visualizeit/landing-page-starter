@@ -24,7 +24,8 @@ const Footer = () => {
 								<Title order={3}>Surpass</Title>
 							</Group>
 							<Text size="sm">
-								Copyright © {new Date().getFullYear()} surpass.studio
+								© {new Date().getFullYear()} Surpass Studio. All Rights
+								Reserved.
 							</Text>
 						</Stack>
 						<Group align="start" gap="xl">
