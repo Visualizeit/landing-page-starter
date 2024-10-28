@@ -52,8 +52,9 @@ const UseCases = () => {
 			<Grid align="center" gutter="xl">
 				<Grid.Col span={{ base: 12, md: 4 }}>
 					<SegmentedControl
-						orientation="vertical"
 						className="w-full"
+						orientation="vertical"
+						radius="lg"
 						value={value}
 						onChange={setValue}
 						data={useCases.map((useCase) => ({
