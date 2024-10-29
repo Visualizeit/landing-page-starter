@@ -15,13 +15,13 @@ const Header = () => {
 					</Group>
 				</Link>
 				<Button
-					hiddenFrom="sm"
+					hiddenFrom="xs"
 					variant="subtle"
 					renderRoot={(props) => <Link to="/" {...props} />}
 				>
 					Get Started
 				</Button>
-				<Group visibleFrom="sm">
+				<Group visibleFrom="xs">
 					<Button
 						variant="subtle"
 						renderRoot={(props) => <Link to="/" {...props} />}
