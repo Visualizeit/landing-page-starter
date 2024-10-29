@@ -11,7 +11,9 @@ import '@mantine/core/styles.css'
 const Providers = ({ children }: PropsWithChildren) => {
 	return (
 		<QueryClientProvider client={queryClient}>
-			<MantineProvider theme={mantineTheme}>{children}</MantineProvider>
+			<MantineProvider defaultColorScheme="auto" theme={mantineTheme}>
+				{children}
+			</MantineProvider>
 		</QueryClientProvider>
 	)
 }
