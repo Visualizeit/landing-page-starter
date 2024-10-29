@@ -121,7 +121,7 @@ const Testimonials = () => {
 				>
 					{[testimonials1, testimonials2, testimonials3].map(
 						(testimonials, index) => (
-							<Stack key={index} className="max-w-80">
+							<Stack key={index} className="max-w-80" gap="xl">
 								{testimonials.map((testimonial) => (
 									<TestimonialCard
 										key={testimonial.name}
