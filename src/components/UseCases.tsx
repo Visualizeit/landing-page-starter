@@ -48,7 +48,7 @@ const UseCases = () => {
 	invariant(currentUseCase, 'No use case found')
 
 	return (
-		<Section id="features">
+		<Section id="use-cases">
 			<Grid align="center" gutter="xl">
 				<Grid.Col span={{ base: 12, md: 4 }}>
 					<SegmentedControl
