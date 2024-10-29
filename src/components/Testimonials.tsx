@@ -44,8 +44,8 @@ const testimonials2: Testimonial[] = [
 			"The scalability of this platform is unmatched. It's grown with us every step of the way.",
 	},
 	{
-		name: 'Gangle',
-		social: '@gangle',
+		name: 'Gummigoo',
+		social: '@gummigoo',
 		quote:
 			'The user interface is intuitive and clean. Our team was able to get up and running in no time. We are now able to focus on what matters most.',
 	},
@@ -71,8 +71,8 @@ const testimonials3: Testimonial[] = [
 			' Incredible insights. The data provided by this platform has been invaluable to our team.',
 	},
 	{
-		name: 'Gummigoo',
-		social: '@gummigoo',
+		name: 'Gangle',
+		social: '@gangle',
 		quote:
 			"We've been able to reduce our costs and improve our bottom line since implementing this tool. It's been a game-changer for us.",
 	},
@@ -87,7 +87,7 @@ const TestimonialCard = ({ testimonial }: TestimonialCardProps) => {
 		<Card key={testimonial.name} withBorder radius="lg">
 			<Stack gap="sm">
 				<Group>
-					<Avatar color="primary" />
+					<Avatar color="initials" name={testimonial.name} />
 					<Stack gap={0}>
 						<Title order={6}>{testimonial.name}</Title>
 						<Text size="xs" c="gray">
