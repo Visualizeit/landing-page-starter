@@ -20,7 +20,7 @@ const Footer = () => {
 						</Text>
 					</Stack>
 					<Stack gap="sm">
-						<Title order={6}>Product</Title>
+						<Title order={5}>Product</Title>
 						<Anchor component={Link} c="gray" size="sm">
 							All Features
 						</Anchor>
@@ -32,7 +32,7 @@ const Footer = () => {
 						</Anchor>
 					</Stack>
 					<Stack gap="sm">
-						<Title order={6}>Support</Title>
+						<Title order={5}>Support</Title>
 						<Anchor component={Link} c="gray" size="sm">
 							FAQ
 						</Anchor>
@@ -44,7 +44,7 @@ const Footer = () => {
 						</Anchor>
 					</Stack>
 					<Stack gap="sm">
-						<Title order={6}>About</Title>
+						<Title order={5}>About</Title>
 						<Anchor component={Link} c="gray" size="sm">
 							About Us
 						</Anchor>
