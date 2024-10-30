@@ -1,5 +1,6 @@
 import { Box, Button, Stack, Text, Title } from '@mantine/core'
 import { IconSparkles } from '@tabler/icons-react'
+import { Link } from '@tanstack/react-router'
 import Section from './Section'
 
 const CallToAction = () => {
@@ -19,9 +20,11 @@ const CallToAction = () => {
 					<Text ta="center">
 						Take your productivity to the next level with our powerful tools.
 					</Text>
-					<Button leftSection={<IconSparkles />} size="md">
-						Get started in minutes
-					</Button>
+					<Link>
+						<Button leftSection={<IconSparkles />} size="md">
+							Get started in minutes
+						</Button>
+					</Link>
 				</Stack>
 			</Section>
 		</Box>
