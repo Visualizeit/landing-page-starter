@@ -1,4 +1,4 @@
-import { Card, Image, SimpleGrid, Stack, Text, Title } from '@mantine/core'
+import { Box, Card, Image, SimpleGrid, Stack, Text, Title } from '@mantine/core'
 import Section from './Section'
 import placeholderImage from '@/assets/placeholderImage'
 
@@ -39,12 +39,14 @@ const Features = () => {
 							<Stack>
 								<Title order={3}>{feature.title}</Title>
 								<Text>{feature.description}</Text>
-								<Image
-									className="aspect-[4/3]"
-									radius="lg"
-									src={feature.image}
-									alt={feature.title}
-								/>
+								<Box className="aspect-[4/3] overflow-hidden">
+									<Image
+										className="size-full transition-transform hover:scale-105"
+										radius="lg"
+										src={feature.image}
+										alt={feature.title}
+									/>
+								</Box>
 							</Stack>
 						</Card>
 					))}
