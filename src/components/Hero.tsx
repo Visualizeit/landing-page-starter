@@ -3,6 +3,7 @@ import { IconSparkles } from '@tabler/icons-react'
 import { Link } from '@tanstack/react-router'
 import Safari from './Safari'
 import Section from './Section'
+import Sparkles from './Sparkles'
 import placeholderImage from '@/assets/placeholderImage'
 
 export const Hero = () => {
@@ -10,10 +11,12 @@ export const Hero = () => {
 		<Section id="hero">
 			<Stack align="center" gap="xl">
 				<Space />
-				<Title ta="center" className="text-6xl font-semibold">
-					The best way to <br />
-					design and build apps
-				</Title>
+				<Sparkles>
+					<Title ta="center" className="text-6xl font-semibold">
+						The best way to <br />
+						design and build apps
+					</Title>
+				</Sparkles>
 				<Text ta="center">
 					AI-powered tools to help you speed up your workflow and create better
 					apps.
