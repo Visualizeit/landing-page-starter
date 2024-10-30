@@ -1,5 +1,7 @@
 # Landing Page Starter
 
+![440_2x_shots_so](https://github.com/user-attachments/assets/02b270a4-4b97-4bc7-bf74-a1b2530ddf49)
+
 A landing page template with Vite, React, TypeScript, and Tailwind CSS.
 
 ## 🚀 Getting Started
