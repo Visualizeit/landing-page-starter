@@ -41,7 +41,7 @@ const Features = () => {
 								<Text>{feature.description}</Text>
 								<Box className="aspect-[4/3] overflow-hidden">
 									<Image
-										className="size-full transition-transform hover:scale-105"
+										className="size-full transition-transform duration-300 hover:scale-105"
 										radius="lg"
 										src={feature.image}
 										alt={feature.title}
