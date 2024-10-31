@@ -53,7 +53,7 @@ const testimonials2: Testimonial[] = [
 		name: 'Kinger',
 		social: '@kinger',
 		quote:
-			'The customer support team is top-notch. They are always available to help us when we need it.',
+			'This service has transformed our workflow. We are now able to collaborate more effectively and efficiently.',
 	},
 ]
 
