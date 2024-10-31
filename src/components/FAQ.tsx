@@ -10,10 +10,10 @@ const faqs = [
 			'Apples are a good source of fiber and vitamin C. They also contain antioxidants that help protect your cells from damage.',
 	},
 	{
-		emoji: '🥭',
-		question: 'What is the best way to cut a mango?',
+		emoji: '🌞',
+		question: 'Why is the sky blue?',
 		answer:
-			'The best way to cut a mango is to slice off the sides, score the flesh, and then scoop it out with a spoon.',
+			'The sky appears blue because of the way Earth’s atmosphere scatters sunlight. Blue light is scattered in all directions by the tiny molecules of air in Earth’s atmosphere.',
 	},
 	{
 		emoji: '🥦',
