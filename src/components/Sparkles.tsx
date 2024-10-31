@@ -1,5 +1,4 @@
 import { Box, DEFAULT_THEME } from '@mantine/core'
-import { useInterval } from '@mantine/hooks'
 import { m } from 'framer-motion'
 import { type PropsWithChildren, useState } from 'react'
 
@@ -25,23 +24,12 @@ const initializeSparkle = () => {
 			: DEFAULT_THEME.colors.pink[4]
 	const delay = Math.random() * 2
 	const scale = Math.random() * 1 + 0.3
-	const lifespan = Math.random() * 10 + 5
 
-	return { x, y, color, delay, scale, lifespan }
+	return { x, y, color, delay, scale }
 }
 
 const Sparkle = () => {
-	const [sparkle, setSparkle] = useState(initializeSparkle)
-
-	useInterval(() => {
-		setSparkle((sparkle) => {
-			if (sparkle.lifespan <= 0) {
-				return initializeSparkle()
-			} else {
-				return { ...sparkle, lifespan: sparkle.lifespan - 0.1 }
-			}
-		})
-	}, 100)
+	const [sparkle] = useState(initializeSparkle)
 
 	return (
 		<m.svg
